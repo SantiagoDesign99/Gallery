@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root {
+	--amarillo-principal: #d6bd01;
+	--amarillo-hover: #b39603;
+	--azul-primario: hwb(198 0% 31%);
+	--azul-hover: #005174;
+	--rojo: #a80000;
+	--rojo-hover: #5e0000;
+	--blanco: #ffffff;
+	--gris-claro: #b1b1b1;
+	--negro: #000000;
+	--sm: 16px;
+	--md: 18px;
+	--lg: 20px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Quicksand' !important;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Banner */
+
+.banner-image {
+	background-image: url(/img/Banner.png);
+}
+
+.logo {
+	font-size: 150px;
+}
+
+.text-white {
+	margin-top: 10px;
+	font-size: 60px;
+}
+
+.btn-iniciar-sesion {
+	font-size: var(--md);
+	text-decoration: none;
+	background: var(--amarillo-principal);
+	padding: 7px 50px;
+	border-radius: 52px;
+	border: none;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	transition: all 0.3s linear;
+}
+
+.btn-registrate {
+	margin-top: 10px;
+	font-size: var(--md);
+	text-decoration: none;
+	background: var(--azul-primario);
+	padding: 7px 62px;
+	border-radius: 52px;
+	border: none;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	color: var(--blanco);
+	transition: all 0.3s linear;
+}
+
+.btn-explora {
+	margin-top: 10px;
+	font-size: var(--md);
+	text-decoration: none;
+	background: var(--rojo);
+	padding: 7px 73px;
+	border-radius: 52px;
+	border: none;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	color: var(--blanco);
+	transition: all 0.3s linear;
+}
+
+.parrafo-banner {
+	color: var(--blanco);
+	margin-top: 15px;
+}
+
+/* btns-hover */
+
+.btn-iniciar-sesion:hover {
+	background: var(--amarillo-hover);
+	transform: scale(1.1);
+}
+
+.olvido-clave {
+	text-decoration: none;
+	color: var(--negro);
+}
+
+.btn-registrate:hover {
+	color: var(--blanco);
+	background: var(--azul-hover);
+	transform: scale(1.1);
+}
+
+.btn-explora:hover {
+	color: var(--blanco);
+	background: var(--rojo-hover);
+	transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Main categorias */
+
+h2 {
+	font-size: var(--lg);
+}
+
+h3 {
+	font-size: 38px;
+}
+
+/* Navbar categorias */
+
+.navbar-light {
+	box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+	height: 70px;
+}
+
+.navbar-logo {
+	text-decoration: none;
+	font-size: 35px;
+	color: var(--negro);
+}
+
+span {
+	color: var(--amarillo-principal);
+}
+
+.btn-registrate-categoria {
+	font-size: var(--md);
+	text-decoration: none;
+	background: var(--amarillo-principal);
+	padding: 7px 50px;
+	border-radius: 52px;
+	border: none;
+}
+
+/* btn-hover */
+
+.btn-registrate-categoria:hover {
+	background: var(--negro);
+	color: var(--blanco);
+}
+
+.navbar-logo:hover {
+	color: var(--amarillo-principal);
+}
+
+/* cards Cataegorias */
+.card-img {
+	border-radius: 10px;
+}
+
+.btn-light {
+	border: none;
+	border-radius: 20px;
+	padding: 7px 20px;
+	transition: all 0.3s linear;
+}
+
+.btn-light:hover {
+	background: var(--amarillo-principal);
+	transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Estilos de los froms */
+
+.form-control {
+	border-color: var(--gris-claro);
+}
+
+.form-control:hover {
+	border-width: medium;
+	border-color: var(--amarillo-principal);
+}
+
+.btn-registrate-froms {
+	font-size: var(--md);
+	text-decoration: none;
+	background: var(--amarillo-principal);
+	padding: 10px 192px;
+}
+
+/* btn-hover */
+
+.btn-registrate-froms:hover {
+	background: var(--negro);
+	color: var(--blanco);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Estilos de las fotos  */
+
+.gallery {
+	position: relative;
+	margin: 1rem;
+	margin-top: 100px;
+	columns: 5 340px;
+	column-gap: 1em;
+}
+
+.image {
+	max-width: 100%;
+	margin-bottom: 1em;
+	padding: 9px;
+	border-radius: 30px;
+	object-fit: cover;
+	transition: all 0.3s linear;
+}
+
+.image:hover {
+	transform: scale(1.1);
+}
+
+.contenedor {
+	width: 90px;
+	height: 240px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 3;
+}
+.botonF1 {
+	width: 300px;
+	height: 50px;
+	border-radius: 30px;
+	background: var(--negro);
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	transition: 0.3s;
+	position: fixed;
+}
+.botonF1:hover {
+	background-color: var(--amarillo-hover);
+}
+span {
+	transition: 0.5s;
+}
+.botonF1:hover span {
+	transform: rotate(360deg);
+}
+.botonF1:active {
+	transform: scale(1.1);
+}
+
+.animacionVer {
+	transform: scale(1);
+}
+/* ---------------------------------------------------------------------------- */
+
+/* Estilos de las detalle fotos  */
+
+.img-detalle {
+	max-width: 500px;
+	height: 750px;
+	margin-bottom: 1em;
+	padding: 9px;
+	display: block;
+	border-radius: 30px;
+	object-fit: cover;
+}
+
+.card {
+	border: none;
+}
+
+.card-body {
+	margin-left: 170px;
+}
